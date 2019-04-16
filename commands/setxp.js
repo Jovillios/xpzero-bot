@@ -1,8 +1,8 @@
 const Discord = require("discord.js");
-const xp = require("../xp.json");
+let xp = require("../xp.json");
 
 module.exports.run = async (bot, message, args) => {
-
+	xp[message.author.id] = args;
 }
 
 module.exports.help = {
